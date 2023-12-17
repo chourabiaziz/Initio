@@ -25,44 +25,58 @@
 
 <body>
 
+	<style>
+		.blinking-text {
+			color: red;
+			animation: blink 1s infinite;
+		}
+
+		@keyframes blink {
+			50% {
+				opacity: 0;
+			}
+		}
+	</style>
 	<header id="header">
-		<div id="head" class="parallax" parallax-speed="1">
+		<div id="head" class="parallax" parallax-speed="2">
 			<h1 id="logo" class="text-center">
 				<img class="img-circle" src="assets/images/guy.jpg" alt="">
-				<span class="title">Anthony Russel's Blog</span>
-				<span class="tagline">A creative man is motivated by the desire to achieve, not by the desire to beat
-					others.</span>
+				<span class="title">CHOURABI Aziz</span>
+				<span class="tagline"> <b>Software engineer</b><br>
+					<a href="mailto:aziz.chourabi@esprit.tn">aziz.chourabi@esprit.tn</a> </span>
 			</h1>
 		</div>
 
 		<nav class="navbar navbar-default navbar-sticky">
 			<div class="container-fluid">
 
+				<!-- Navbar Header - contains the toggle button for small screens -->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse"
-						data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+						data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 					</button>
 				</div>
 
-				<div class="navbar-collapse collapse">
-
-					<ul class="nav navbar-nav">
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav ">
 						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b
-									class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="sidebar-left.html">Left Sidebar</a></li>
-								<li><a href="sidebar-right.html">Right Sidebar</a></li>
-								<li><a href="single.html">Blog Post</a></li>
-							</ul>
-						</li>
-						<li class="active"><a href="blog.html">Blog</a></li>
+						<li><a href="myCareer.html">My Career</a></li>
+						<li class="active"><a href="clientSpace.html">Client Space</a></li>
+						<li><a href="blog.html">Blog</a></li>
 					</ul>
+				</div>
 
-				</div><!--/.nav-collapse -->
+
+
+
+
+
+				<!-- Navbar Collapse - contains the navigation links -->
+				<!-- /.nav-collapse -->
 			</div>
 		</nav>
 	</header>
@@ -76,7 +90,7 @@
 				<div class="col-sm-8 col-sm-offset-2">
 
 					<div id="respond">
-						<h3 id="reply-title">Leave a comment or feedback </h3>
+						<h3 id="reply-title">Reach out to me here or provide feedback </h3>
 						<form action="https://formspree.io/f/xdoqnoqa" method="post" id="commentform" class="">
 							<div class="form-group">
 								<label for="inputName">Full Name <i class="text-danger">*</i></label>
@@ -118,77 +132,37 @@
 		</div> <!-- /container -->
 
 	</main>
-
-	<footer id="footer" class="topspace">
+	<br>
+	<footer id="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3 widget">
+				<div class="col-md-6 widget">
 					<h3 class="widget-title">Contact</h3>
 					<div class="widget-body">
-						<p>+234 23 9873237<br>
-							<a href="mailto:#">some.email@somewhere.com</a><br>
+						<p>+216 98 110 377<br>
+							<a href="mailto:#">aziz.chourabi@esprit.tn</a><br>
 							<br>
-							234 Hidden Pond Road, Ashland City, TN 37015
+							Tunisie , Médina de Tunis
+
 						</p>
 					</div>
 				</div>
 
-				<div class="col-md-3 widget">
-					<h3 class="widget-title">Follow me</h3>
+				<div class="col-md-6 widget">
+					<h3 class="widget-title">Follow us</h3>
 					<div class="widget-body">
 						<p class="follow-me-icons">
-							<a href=""><i class="fa fa-twitter fa-2"></i></a>
-							<a href=""><i class="fa fa-dribbble fa-2"></i></a>
-							<a href=""><i class="fa fa-github fa-2"></i></a>
-							<a href=""><i class="fa fa-facebook fa-2"></i></a>
+							<a href="https://www.linkedin.com/in/chourabi-aziz/"><i class="fa fa-linkedin fa-2"></i></a>
+							<a href="https://github.com/chourabiaziz"><i class="fa fa-github fa-2"></i></a>
+							<a href="https://www.facebook.com/profile.php?id=61551611834649"><i
+									class="fa fa-facebook fa-2"></i></a>
+							<br><br>
 						</p>
 					</div>
 				</div>
 
-				<div class="col-md-3 widget">
-					<h3 class="widget-title">Text widget</h3>
-					<div class="widget-body">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum
-							quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia
-							asperiores adipisci maxime!</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum
-							quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia
-							asperiores adipisci maxime!</p>
-					</div>
-				</div>
 
-				<div class="col-md-3 widget">
-					<h3 class="widget-title">Form widget</h3>
-					<div class="widget-body">
-						<p>+234 23 9873237<br>
-							<a href="mailto:#">some.email@somewhere.com</a><br>
-							<br>
-							234 Hidden Pond Road, Ashland City, TN 37015
-						</p>
-					</div>
-				</div>
 
-			</div> <!-- /row of widgets -->
-		</div>
-	</footer>
-
-	<footer id="underfooter">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-md-6 widget">
-					<div class="widget-body">
-						<p>234 Hidden Pond Road, Ashland City, TN 37015 </p>
-					</div>
-				</div>
-
-				<div class="col-md-6 widget">
-					<div class="widget-body">
-						<p class="text-right">
-							Copyright &copy; 2014, Your awesome name here<br>
-							Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> </p>
-					</div>
-				</div>
 
 			</div> <!-- /row of widgets -->
 		</div>
