@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
+
+    <title>Right Sidebar | CHOURABI Aziz</title>
+
+    <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <!-- Icon font -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+
+<body>
+    <style>
+        b.blurred {
+            filter: blur(8px);
+            /* Adjust the blur intensity as needed */
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            /* Ensure the lightbox is on top of the blurred content */
+        }
+
+        .lightbox img {
+            max-width: 80%;
+            max-height: 80%;
+            display: block;
+            margin: auto;
+        }
+
+        .lightbox .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 70px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .gallery .col-sm-4 {
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        .blinking-text {
+            color: red;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <header id="header">
+        <div id="head" class="parallax" parallax-speed="2">
+            <h1 id="logo" class="text-center">
+                <img class="img-circle" src="assets/images/guy.jpg" alt="">
+                <span class="title">CHOURABI Aziz</span>
+                <span class="tagline"> <b>Software engineer</b><br>
+                    <a href="mailto:aziz.chourabi@esprit.tn">aziz.chourabi@esprit.tn</a> </span>
+            </h1>
+        </div>
+
+        <nav class="navbar navbar-default navbar-sticky">
+            <div class="container-fluid">
+
+                <!-- Navbar Header - contains the toggle button for small screens -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav ">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="myCareer.html">My Career</a></li>
+                        <li class="blinking-text"><a href="clientSpace.html">Client Space</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+                <!-- Navbar Collapse - contains the navigation links -->
+                <!-- /.nav-collapse -->
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <div class="container">
+
+            <div class="row topspace">
+
+                <!-- Article main content -->
+                <article class="col-sm-8 maincontent">
+                    <header class="page-header">
+                        <h1 class="page-title">Lorem ipsum dolor sit amet, consectetur.</h1>
+                    </header>
+
+
+                    <div class="row">
+                        <div class="gallery m-1">
+                            <div class="col-sm-4 m-1">
+                                <img width="100%" height="100%" src="assets\images\work1\wrok1_1.png" alt=""
+                                    onclick="openLightbox('assets/images/work1/wrok1_1.png')">
+                            </div>
+                            <div class="col-sm-4 m-1">
+                                <img width="100%" height="100%" src="assets/images/work1/login.png" alt=""
+                                    onclick="openLightbox('assets/images/work1/login.png')">
+                            </div>
+                            <div class="col-sm-4 m-1">
+                                <img width="100%" height="100%" src="assets/images/work1/register.png" alt=""
+                                    onclick="openLightbox('assets/images/work1/register.png')">
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="gallery m-1">
+
+                            <div class="col-sm-4 m-1">
+                                <img width="100%" height="100%" src="assets/images/work1/admin.png" alt=""
+                                    onclick="openLightbox('assets/images/work1/admin.png')">
+                            </div>
+                            <div class="col-sm-4 m-1">
+                                <img width="100%" height="100%" src="assets/images/work1/service.png" alt=""
+                                    onclick="openLightbox('assets/images/work1/service.png')">
+                            </div>
+                            <div class="col-sm-4 m-1">
+                                <img width="100%" height="100%" src="assets/images/work1/projet.png" alt=""
+                                    onclick="openLightbox('assets/images/work1/projet.png')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="gallery m-1">
+                            <div class="col-sm-4 m-1">
+                                <img width="100%" height="100%" src="assets\images\work1\access.png" alt=""
+                                    onclick="openLightbox('assets/images/work1/access.png')">
+                            </div>
+                            <div class="col-sm-4 m-1">
+                                <img width="100%" height="100%" src="assets/images/work1/ticket.png" alt=""
+                                    onclick="openLightbox('assets/images/work1/ticket.png')">
+                            </div>
+                            <div class="col-sm-4 m-1">
+                                <img width="100%" height="100%" src="assets/images/work1/log.png" alt=""
+                                    onclick="openLightbox('assets/images/work1/log.png')">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="gallery m-1">
+                            <div class="col-sm-4 m-1">
+                                <img width="100%" height="100%" src="assets\images\work1\facture1.png" alt=""
+                                    onclick="openLightbox('assets/images/work1/facture1.png')">
+                            </div>
+                            <div class="col-sm-4 m-1">
+                                <img width="100%" height="100%" src="assets/images/work1/facture2.png" alt=""
+                                    onclick="openLightbox('assets/images/work1/facture2.png')">
+                            </div>
+                            <div class="col-sm-4 m-1">
+                                <img width="100%" height="100%" src="assets/images/work1/impression.png" alt=""
+                                    onclick="openLightbox('assets/images/work1/impression.png')">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="gallery m-1">
+                            <div class="col-sm-4 m-1">
+                                <img width="100%" height="100%" src="assets\images\work1\msngr.png" alt=""
+                                    onclick="openLightbox('assets/images/work1/msngr.png')">
+                            </div>
+                            <div class="col-sm-4 m-1">
+                                <img width="100%" height="100%" src="assets/images/work1/notification.png" alt=""
+                                    onclick="openLightbox('assets/images/work1/notification.png')">
+                            </div>
+                            <div class="col-sm-4 m-1">
+                                <img width="100%" height="100%" src="assets/images/work1/gm.jpg" alt=""
+                                    onclick="openLightbox('assets/images/work1/gm.jpg')">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="lightbox" id="lightbox">
+                        <span class="close-btn text-center" onclick="closeLightbox()">&times;</span>
+                        <img src="" alt="" id="lightbox-img">
+                    </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, consequuntur eius repellendus
+                eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam
+                aliquam beatae soluta accusantium iusto nihil nesciunt unde veniam magnam repudiandae sapiente.
+            </p>
+            <h3>Necessitatibus</h3>
+            <p>Velit, odit, eius, libero unde impedit quaerat dolorem assumenda alias consequuntur optio quae
+                maiores ratione tempore sit aliquid architecto eligendi pariatur ab soluta doloremque dicta
+                aspernatur labore quibusdam dolore corrupti quod inventore. Maiores, repellat, consequuntur eius
+                repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat
+                consectetur quam aliquam!</p>
+            <blockquote>Velit, odit, eius, libero unde impedit quaerat dolorem assumenda alias consequuntur
+                optio quae maiores ratione tempore sit aliquid architecto eligendi pariatur ab soluta doloremque
+                dicta aspernatur labore quibusdam dolore corrupti quod inventore. Maiores, repellat,
+                consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium
+                voluptates placeat consectetur quam aliquam!</blockquote>
+            <p>Velit, odit, eius, libero unde impedit quaerat dolorem assumenda alias consequuntur optio quae
+                maiores ratione tempore sit aliquid architecto eligendi pariatur ab soluta doloremque dicta
+                aspernatur labore quibusdam dolore corrupti quod inventore. Maiores, repellat, consequuntur eius
+                repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat
+                consectetur quam aliquam!</p>
+            <div class="row">
+                <div class="gallery m-1">
+
+                    <div class="col-4 m-1">
+                        <img src="assets/images/work1/stat.png" alt=""
+                            onclick="openLightbox('assets/images/work1/stat.png')">
+                    </div>
+                </div>
+
+            </div>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus!</li>
+                <li>Laboriosam, aliquam totam asperiores nam velit voluptatum non quidem.</li>
+                <li>Voluptatem, libero quia voluptatum ab modi facere dolore assumenda?</li>
+                <li>Expedita, officia tenetur doloremque nulla temporibus ab voluptates adipisci.</li>
+                <li>Nostrum, nesciunt, inventore amet temporibus officia perferendis doloremque nulla.</li>
+                <li>Dolorum, ex earum maiores perspiciatis modi sequi odit mollitia.</li>
+            </ul>
+
+            </article>
+            <!-- /Article -->
+
+            <!-- Sidebar -->
+
+            <!-- /Sidebar -->
+
+        </div>
+        </div> <!-- /container -->
+
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 widget">
+                    <h3 class="widget-title">Contact</h3>
+                    <div class="widget-body">
+                        <p>+216 98 110 377<br>
+                            <a href="mailto:#">aziz.chourabi@esprit.tn</a><br>
+                            <br>
+                            Tunisie , Médina de Tunis
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 widget">
+                    <h3 class="widget-title">Follow us</h3>
+                    <div class="widget-body">
+                        <p class="follow-me-icons">
+                            <a href="https://www.linkedin.com/in/chourabi-aziz/"><i class="fa fa-linkedin fa-2"></i></a>
+                            <a href="https://github.com/chourabiaziz"><i class="fa fa-github fa-2"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61551611834649"><i
+                                    class="fa fa-facebook fa-2"></i></a>
+                            <br><br>
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+            </div> <!-- /row of widgets -->
+        </div>
+    </footer>
+
+
+
+    <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/template.js"></script>
+    <script>
+        function openLightbox(imageSrc) {
+            document.getElementById('lightbox-img').src = imageSrc;
+            document.getElementById('lightbox').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+
+</body>
+
+</html>
